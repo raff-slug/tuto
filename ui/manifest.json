@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Chatbots 4 Edu",
+    "version": "0.0.1",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.khanacademy.org/math/5th-engage-ny/engage-5th-module-3/5th-module-3-topic-b/e/adding_fractions"
+            ],
+            "js": ["jquery-3.3.1.min.js", "chatbots4edu.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
